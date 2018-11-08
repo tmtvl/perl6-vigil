@@ -34,7 +34,7 @@ sub calc-md5-sum (MD5Plan $plan) {
 
 	print "Calculating MD5 sum for { $plan.filehandle }       "; # We need some space for the spinner to take up.
 	                                                             # I like 'bounce', so I need 6 spaces for the spinner
-																 # + an extra one to separate it from the filehandle.
+	                                                             # + an extra one to separate it from the filehandle.
 
 	my Buf $buffer = $plan.filehandle.IO.slurp(:close, :bin);
 
